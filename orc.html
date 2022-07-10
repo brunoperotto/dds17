@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Site Forms</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<header>
+		<p class="logo">TODIMO</p>
+		<form id="pesquisa" method="get">
+			<p><label id="busca">Pesquisa: </label>
+				<input type="text" name="tPesquisa" id="cPesquisa">
+				<input type="submit" name="bSub" id="cSub" value="Buscar">
+			</p>
+		</form>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="fotos.html">FOTOS</a></li>
+				<li><a href="contato.html">CONTATOS</a></li>
+			</ul>
+		</nav>
+		<article>
+				<div class="orcamento">
+
+					<form method="post" id="fContato" action="mailto:b.perotto@gmail.com">
+
+					<fieldset id="prod">
+						<legend>Orçamento</legend>
+
+							<p><label for="cProd">Produto: </label><select name="tProd" id="cProd">
+								<optgroup label="Tintas">
+									<option>Tinta Coral Laranja</option>
+									<option selected="true">Tinta Ultracor Turquesa</option>
+									<option>Tinta Coral Ciano</option>
+									<option>Tinta Coral Verde</option>
+									<option>Tinta Ultracor Amarela</option>
+								</optgroup>
+								<optgroup label="Chaves de Fenda">
+									<option>Chave de Fendas Tamanho 1</option>
+									<option>Chave de Fendas Tamanho 2</option>
+									<option>Chave de Fendas Tamanho 3</option>
+								</optgroup>
+							</select></p>
+
+							<p><label for="cQuant">Quantidade: </label><input type="range" name="rQuant" id="cQuant" min="0" max="100" step="1"></p>
+
+						    </br><input type="submit" name="bEnd" id="cEnd" value="Finalizar">
+					</fieldset>
+					</form>
+				</div>
+		</article>
+		<aside>
+			<h4>NADA RELEVANTE AQUI.</h4>
+			<p class="tAside">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p class="tAside">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</aside>
+	</section>
+	<footer>
+		<p class="rodape">Desenvolvido por bperotto&copy</p>
+	</footer>
+</body>
+</html>

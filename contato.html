@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Site Forms</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<header>
+		<p class="logo">TODIMO</p>
+		<form id="pesquisa" method="get">
+			<p><label id="busca">Pesquisa: </label>
+				<input type="text" name="tPesquisa" id="cPesquisa">
+				<input type="submit" name="bSub" id="cSub" value="Buscar">
+			</p>
+		</form>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="fotos.html">FOTOS</a></li>
+				<li><a href="orc.html">ORCAMENTOS</a></li>
+			</ul>
+		</nav>
+		<article>
+				<div class="orcamento">
+					<form method="post" id="fContato" action="mailto:b.perotto@gmail.com">
+
+						<fieldset id="id_user">
+						<legend>Identificação do Usuário</legend>
+							<p><label for="cNome">Nome: &nbsp</label><input type="text" name="tNome" id="cNome" size="40" maxlength="40" minlength="10" placeholder="Nome Completo"></p>
+							<p><label for="cEmail">E-mail: </label><input type="email" name="tEmail" id="cEmail" size="40" maxlength="40" minlength="10" placeholder="exemplo@email.com"></p>
+
+							<fieldset id="sex_user">
+								<legend>Sexo</legend>
+									<p><input type="radio" name="rSex" id="cMasc"><label for="cMasc"> Masculino</label></p>
+									<p><input type="radio" name="rSex" id="cFem"><label for="cFem"> Feminino</label></p>
+									<p><input type="radio" name="rSex" id="cOut" checked="true"><label for="cOut"> Outro</label></p>
+									
+							</fieldset>
+						</fieldset>
+
+
+						<fieldset id="msg_user">
+							<legend>Escreva sua Mensagem</legend>
+								<p><label for="cMsg">Mensagem: </label></p>
+								<textarea name="tMsg" id="cMsg" cols="85" rows="10"></textarea>
+						</fieldset>
+
+						<fieldset id="check_box">
+							<legend>Dados Opcionais</legend>
+								<p><input type="checkbox" name="tSeg" id="cSeg" checked="true"><label for="cSeg"> Quero receber novidades</label></p>
+						</fieldset>
+
+						</br></br><input type="submit" name="bEnd" id="cEnd" value="Finalizar">
+					</form>
+				</div>
+		</article>
+		<aside>
+			<h4>NADA RELEVANTE AQUI.</h4>
+			<p class="tAside">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p class="tAside">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</aside>
+	</section>
+	<footer>
+		<p class="rodape">Desenvolvido por bperotto&copy</p>
+	</footer>
+</body>
+</html>
