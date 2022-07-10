@@ -63,6 +63,13 @@ h1{
 	margin-left: 2%;
 }
 
+iframe{
+	margin-top: 20px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 .orcamento{
 	display: block;
 	margin-left: 100px;
